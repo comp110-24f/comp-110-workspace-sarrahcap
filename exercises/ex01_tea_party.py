@@ -1,6 +1,6 @@
 """Plan the best tea party ever."""
 
-___author___: str = "730652750"
+__author__: str = "730652750"
 
 
 # for cost, you cannot do any arithmetic in the print function, you must call on the other function definitions (while still defining the necessary parameters)

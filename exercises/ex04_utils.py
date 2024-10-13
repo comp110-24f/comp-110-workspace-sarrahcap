@@ -3,7 +3,7 @@
 __author__ = "730652750"
 
 
-def all(list_1: list[int], int_1):
+def all(list_1: list[int], int_1: int) -> bool:
     if not list_1:
         return False
     # if list is empty, return False
@@ -28,17 +28,16 @@ def max(input: list[int]) -> int:
     # after comparing max_value to #'s in list, return the found max_value
 
 
-def is_equal(int_list_1: list[int], int_list_2: list[int]):
-    # if return type is a bool, do not write it in function signature or it will give an error
+def is_equal(int_list_1: list[int], int_list_2: list[int]) -> bool:
     if int_list_1 == int_list_2:
         return True
-    # if the two lists are equal, return true
+    # if the two lists are equal, return True
     if int_list_1 != int_list_2:
         return False
-    # if the two lists are not equal, return false
+    # if the two lists are not equal, return False
 
 
-def extend(i_list_1: list[int], i_list_2: list[int]):
+def extend(i_list_1: list[int], i_list_2: list[int]) -> None:
     for elem in i_list_2:
         # use for ... in loop so it will iterate over every value of i_list_2
         i_list_1.append(elem)
